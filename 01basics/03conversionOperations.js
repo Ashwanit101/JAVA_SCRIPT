@@ -22,7 +22,7 @@ console.log(BooleanIsLoggined)
 // null=>false
 // undefined=>false
 
-let someNumber="33"
+let someNumber=33
 let stringNumber=String(someNumber)
 console.log(typeof stringNumber)
 console.log(stringNumber)
