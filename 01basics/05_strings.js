@@ -29,7 +29,7 @@ console.log(url.replace('%01','*'));
 console.log(url.includes('%01'));
 console.log(gameName.split('-'));
 
-
+// completed
   
   
   
