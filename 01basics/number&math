@@ -1,0 +1,46 @@
+const score=100
+console.log(score);
+
+const balance=new Number(400)
+console.log(balance);
+ // using protypes of number
+ // by converting it into string we can use protypes of string
+ console.log(balance.toString().length);
+ // we generally use 2 point fixed in projects to get value upto 2 decimal
+ console.log(balance.toFixed(4));
+ const otherNumber=1123.878
+ console.log(otherNumber.toPrecision(2));
+ const hundreds =100000
+//  by using tolocale string we can put (,) between numbers by any standards(indian,american)
+ console.log(hundreds.toLocaleString('en-IN'));
+
+    //   !!!! MATHS !!!!!!
+
+    // maths is a library which is default included in javascript
+    console.log(Math)
+    console.log(Math.abs(-24));
+    // it rounds up the value
+    console.log(Math.round(4.6));
+    console.log(Math.ceil(4.4));
+    console.log(Math.floor(4.4));
+    console.log(Math.min(3,2,1,5));
+    console.log(Math.max(2,5,2,7));
+
+  // Now the most important part
+   // to create random value between any range
+   console.log(Math.random()); // it gives value betweeen 0 and 1
+  
+   // to get value between 1 and 10
+   console.log(Math.random()*10+1);
+   console.log(Math.floor(Math.random()*10)+1);
+   
+   const min=10;
+   const max=20;
+   // trick formula
+   console.log(Math.floor(Math.random()*(max-min+1))+min);
+    
+        
+    
+    
+ 
+ 
