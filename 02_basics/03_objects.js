@@ -1,3 +1,5 @@
+// object is created by two ways : by constructor and by using literals
+
 // Remember:singleton is formed when we create object by:Object.create  (using constructor)
 
 // Object creation  By using :
