@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chai aur Javascript</h1>
+    <button   id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    // const saydate=function(str){
+    //     console.log(str, "Ashwani",Date.now());
+    // }
+    // // in set interval parameter(third variable) can be passed 
+    // const intervalid=setInterval(saydate,1000,"hi")
+    // clearInterval(intervalid)
+     let set=null;
+    document.querySelector('#start').addEventListener('click',function(){
+                 if (set !== null) return; // Prevent multiple intervals
+                  const say=function(){
+            console.log("hi Ashwani");
+         }
+         set=setInterval(say, 1000);
+        
+
+    })
+    document.querySelector('#stop').addEventListener('click',function(){
+        clearInterval(set);
+        set=null; // so it can restart
+    })
+</script>
+</html>

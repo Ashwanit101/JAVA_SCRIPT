@@ -12,7 +12,7 @@
             <li><img width="200px" id="photoshop" src="https://images.pexels.com/photos/3561339/pexels-photo-3561339.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="photoshop"></li>
             <li><img width="200px" id="japan" src="https://images.pexels.com/photos/3532553/pexels-photo-3532553.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
             <li><img width="200px" id="river" src="https://images.pexels.com/photos/3532551/pexels-photo-3532551.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
-            <li><img width="200px" id="owl" src="https://images.pexels.com/photos/3532552/pexels-photo-3532552.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="" ></li>
+            <li><img width="200px" id="owl" src="https://images.pexels.com/photos/3532552/pexels-photo-3532552.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""   ></li>
             <li><img width="200px" id="prayer" src="https://images.pexels.com/photos/2522671/pexels-photo-2522671.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
             <li><a style="color: rgb(61, 133, 196);" href="https://google.com" id="google">Google</a></li>
         </ul>
@@ -20,6 +20,60 @@
 
 </body>
 <script>
+    //  document.getElementById('owl').onclick=function(){
+    //      alert('owl');
+    //  }
+    // attachEvent() method used in Internet Exploreer
+     //jQuery - on 
+
+                   // Have to read for interview perspective // 
+   // type , timestamp ,  defaultPrevented 
+    // target, src element , current Target
+    // client X, client Y , screen X , screen Y
+    // altkey, ctrl key , shiftkey , keycode
+
+    // by default false
     
+//     document.getElementById('images').addEventListener('click',function(e){
+//         console.log("clicked inside ul");
+//     },true);
+
+    
+//     document.getElementById('owl').addEventListener('click',function(e){
+//         console.log("owl clicked");
+//         e.stopPropagation(); // to prevent bubbling
+//     },true);
+   
+//   // Event bubbling - event listener moves from bottom to up(false,default false)
+//   // capturing - event listener moves from top to bottom (true use)
+    
+//   // prevent defualt function of id (google)
+//   document.getElementById('google').addEventListener('click',function(e){
+//         e.preventDefault();
+//         e.stopPropagation();
+//         console.log("google clicked");
+
+//   },false)
+
+        document.querySelector('#images').addEventListener('click',function(e){
+                        //   console.log(e.target.parentNode);
+                          
+                        // let removeit=e.target.parentNode;
+                        // removeit.remove();
+                        // removeit.parentNode.removeChild(removeit);
+                            //  tageName gives us type of item
+                          console.log(e.target.tagName);
+                          if(e.target.tagName=='IMG'){
+                            console.log(e.target.id);
+                          
+                        let removeit=e.target.parentNode;
+                        removeit.remove();
+                          }
+
+
+        },false)
+      
+ 
+
 </script>
 </html>
